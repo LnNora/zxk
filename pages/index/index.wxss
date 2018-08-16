@@ -1,0 +1,36 @@
+.content{
+  margin: 30rpx;
+}
+swiper{
+  height: 351rpx;
+}
+.banner-img{
+ 
+}
+.banner-item image{
+  width:100%;
+  height: 100%;
+}
+
+.nav{
+  margin:56rpx 0;
+}
+.nav navigator{
+  width:20%;
+}
+.nav image{
+  width:65%;
+  height:auto;
+}
+
+.flex-colomn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text-24{font-size: 24rpx;}

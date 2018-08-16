@@ -1,0 +1,22 @@
+<view class="content">
+<!--banner-->
+<swiper autoplay="true">
+  <swiper-item class="banner-item">
+    <image src="../assets/images/banner1.png"></image>
+  </swiper-item>
+  <swiper-item class="banner-item">
+    <image src="../assets/images/banner2.png"></image>
+  </swiper-item>
+</swiper>
+
+<!--导航-->
+<view class='nav flex-row text-24'>
+  <navigator class="flex-colomn"><image src="../assets/images/nav1.png" mode="widthFix"></image><text>土禽</text></navigator>
+  <navigator class="flex-colomn"><image src="../assets/images/nav2.png" mode="widthFix"></image><text>肉类</text></navigator>
+  <navigator class="flex-colomn"><image src="../assets/images/nav3.png" mode="widthFix"></image><text>蛋类</text></navigator>
+  <navigator class="flex-colomn"><image src="../assets/images/nav4.png" mode="widthFix"></image><text>水产</text></navigator>
+  <navigator class="flex-colomn"><image src="../assets/images/nav5.png" mode="widthFix"></image><text>更多</text></navigator>
+</view>
+
+
+</view>
