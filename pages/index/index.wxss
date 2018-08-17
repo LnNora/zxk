@@ -23,14 +23,3 @@ swiper{
   height:auto;
 }
 
-.flex-colomn{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.flex-row{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.text-24{font-size: 24rpx;}

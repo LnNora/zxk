@@ -1,2 +1,67 @@
 <!--pages/list/list.wxml-->
+<view class='content'>
+<!--选项区域-->
+<view class='col-24 text-30'>
+  <view bindtap="tap">土禽</view>
+  <view>肉类</view>
+</view>
+<!--列表区域-->
+<scroll-view scroll-y style="height:1000rpx" scroll-into-view="{{toView}}">
+<view id="tab1" class='section'>
+  <text class='text-22' >土禽</text>
+  <view class='flex-row good-item text-32'>
+    <image src='../assets/images/good1.png'></image>
+    <view class='flex-column inner-text'>
+      <text>黎香湖老母鸡</text>
+      <text class='price'>￥128.90</text>
+    </view>
+  </view>
+  <view class='flex-row good-item text-32'>
+    <image src='../assets/images/good2.png'></image>
+    <view class='flex-column inner-text'>
+      <text>璧山黑凤乌鸡</text>
+      <text class='price'>￥128.90</text>
+    </view>
+  </view>
+  <view class='flex-row good-item text-32'>
+    <image src='../assets/images/good3.png'></image>
+    <view class='flex-column inner-text'>
+      <text>黎香湖鸽子</text>
+      <text class='price'>￥128.90</text>
+    </view>
+  </view>
+  <view class='flex-row good-item text-32'>
+    <image src='../assets/images/good3.png'></image>
+    <view class='flex-column inner-text'>
+      <text>黎香湖鸽子</text>
+      <text class='price'>￥128.90</text>
+    </view>
+  </view>
+  <view class='flex-row good-item text-32'>
+    <image src='../assets/images/good3.png'></image>
+    <view class='flex-column inner-text'>
+      <text>黎香湖鸽子</text>
+      <text class='price'>￥128.90</text>
+    </view>
+  </view>
+  </view>
+  <view id="tab2" class='section'>
+  <text class='text-22'>肉类</text>
+  <view class='flex-row good-item text-32'>
+    <image src='../assets/images/good4.png'></image>
+    <view class='flex-column inner-text'>
+      <text>荣昌土猪肉</text>
+      <text class='price'>￥128.90</text>
+    </view>
+  </view>
+  <view class='flex-row good-item text-32'>
+    <image src='../assets/images/good5.png'></image>
+    <view class='flex-column inner-text'>
+      <text>黄草山牛肉</text>
+      <text class='price'>￥128.90</text>
+    </view>
+  </view>
+  </view>
+</scroll-view>
 
+</view>

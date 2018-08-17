@@ -8,3 +8,20 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text-22{font-size: 22rpx;}
+.text-24{font-size: 24rpx;}
+.text-30{font-size:30rpx;}
+.text-32{font-size:32rpx;}
+.text-61ce7c{color: #61ce7c;}
+.price{color: #61ce7c;}
+.col-24{width:24%;}

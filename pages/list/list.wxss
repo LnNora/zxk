@@ -1,1 +1,23 @@
 /* pages/list/list.wxss */
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.scroll-view{
+
+}
+.good-item{
+  margin-bottom: 40rpx;
+}
+.good-item image{
+  width:140rpx;
+  height: 140rpx;
+  margin-right: 22rpx;
+}
+.flex-row.good-item{
+  justify-content: flex-start;
+}
+.flex-column.inner-text{
+  justify-content: space-between;
+  align-items: flex-start;
+}
