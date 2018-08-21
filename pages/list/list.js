@@ -66,6 +66,6 @@ Page({
   
   },
   tap: function (e) {
-    console.log(e);
+    this.setData({toView:e.target.dataset.current});
   }
 })
