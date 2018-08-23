@@ -1,0 +1,70 @@
+<!--pages/detail/detail.wxml-->
+<!--轮播图-->
+<swiper indicator-dots>
+  <swiper-item>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuifzphppdj20ku0h87j1.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig0ujighj20on0kgqgv.jpg'></image>
+  </swiper-item>
+</swiper>
+<!--主要内容-->
+<view class='main'>
+  <view class='flex-column basic-info'> 
+    <text class='price text-56'>￥449</text>
+    <text class='text-30'>【仅限主城】黎香湖老母鸡净肉约1.5kg/只</text>
+  </view>
+  <view class='text-28 info'>
+    <text class='weaken property-name'>已选</text>
+    <text>黎香湖老母鸡1.5kg</text>
+  </view>
+  <view class='text-28 info'>
+    <text class='weaken property-name' >送至</text>
+    <text bindtap='chooseAddress'>{{myAddress}}</text>
+  </view>  
+</view>
+<!--商品详情-->
+<view class='more'>
+    <text class='text-30'>商品详情</text>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuijor461ej20ku0us4ce.jpg'  mode="widthFix"></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuijotzd7rj20ku0tl7dc.jpg' mode="widthFix"></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuijow0bwlj20ku0dwgnu.jpg' mode="widthFix"></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuijoxy5kzj20ku0k3n5p.jpg' mode="widthFix"></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuijoztl97j20ku1781c6.jpg' mode="widthFix"></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuijp1ghjaj20ku0rtjxc.jpg' mode="widthFix"></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuijp378e1j20ku0qcgpw.jpg' mode="widthFix"></image>
+</view>
+<!--底部按钮-->
+<view class='flex-row text-28 btns'>
+  <view class='iconfont icon-kefu'></view>
+  <view class='iconfont icon-gouwuche1'></view>
+  <view class='btn buy'>立即购买</view>
+  <view class='btn add-cart'>加入购物车</view>
+</view>
+
+<!--选择规格弹出层-->
+<view class='properties-layer text-32'>
+  <view class='flex-row basic-info'>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig0jeg35j204b04gdh5.jpg'></image>
+    <view class='flex-column'>
+      <text class='price'>{{good}}</text>
+      <text>已选择：1kg</text>
+    </view>
+  </view>
+  <view class='properties'>
+    <view class='property-name'>规格</view>
+    <view>
+      <text class='property' wx:for="{{good}}">{{item.name}}</text>
+    </view>
+  </view>
+  <view class='choose-amount'>
+    <view class='property-name'>数量</view>
+    <view class='flex-row amount-wrap'>
+      <view class="iconfont icon-jian {{min==false?'active':''}}" bindtap='reduce'></view><text class='amount text-32'>{{amount}}</text><view class="iconfont icon-jia {{max==false?'active':''}}" bindtap='increase'></view>
+    </view>
+  </view>
+  <view class='flex-row'>
+    <view class='btn buy'>立即购买</view>
+    <view class='btn add-cart'>加入购物车</view>
+  </view>
+</view>

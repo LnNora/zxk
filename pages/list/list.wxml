@@ -1,5 +1,15 @@
 <!--pages/list/list.wxml-->
-<view class='content'>
+<!--搜索框-->
+<view class='search-wrap'>
+  <view class='search flex-row'>
+    <icon type='search' size='16'></icon>
+    <input type='text' placeholder='请输入商品名称' placeholder-class></input>
+  </view>
+</view>
+  
+  
+  <view class='content'>
+
 <!--选项区域-->
 <view class='col-24 text-30 tabs flex-column'>
   <view bindtap="tap" data-current="tab1" class="tab {{toView=='tab1'?'active':''}}">土禽</view>
@@ -10,49 +20,49 @@
 <view id="tab1" class='section'>
   <text class='text-22'>土禽</text>
   <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good1.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig0jeg35j204b04gdh5.jpg'></image>
     <view class='flex-column inner-text'>
       <text>黎香湖老母鸡</text>
       <text class='price'>￥128.90</text>
     </view>
   </view>
   <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good2.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1l91l8j204e04e0ts.jpg'></image>
     <view class='flex-column inner-text'>
       <text>璧山黑凤乌鸡</text>
       <text class='price'>￥128.90</text>
     </view>
   </view>
   <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good3.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1n7m61j204906dwgd.jpg'></image>
     <view class='flex-column inner-text'>
       <text>黎香湖鸽子</text>
       <text class='price'>￥128.90</text>
     </view>
   </view>
   <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good3.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1n7m61j204906dwgd.jpg'></image>
     <view class='flex-column inner-text'>
       <text>黎香湖鸽子</text>
       <text class='price'>￥128.90</text>
     </view>
   </view>
   <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good3.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1n7m61j204906dwgd.jpg'></image>
     <view class='flex-column inner-text'>
       <text>黎香湖鸽子</text>
       <text class='price'>￥128.90</text>
     </view>
   </view>
    <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good3.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1n7m61j204906dwgd.jpg'></image>
     <view class='flex-column inner-text'>
       <text>黎香湖鸽子</text>
       <text class='price'>￥128.90</text>
     </view>
   </view>
    <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good3.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1n7m61j204906dwgd.jpg'></image>
     <view class='flex-column inner-text'>
       <text>黎香湖鸽子</text>
       <text class='price'>￥128.90</text>
@@ -61,16 +71,16 @@
   
   </view>
   <view id="tab2" class='section'>
-  <text class='text-22' data-current="2">肉类</text>
+  <text class='text-22'>肉类</text>
   <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good4.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1p7d4fj204105ptah.jpg'></image>
     <view class='flex-column inner-text'>
       <text>荣昌土猪肉</text>
       <text class='price'>￥128.90</text>
     </view>
   </view>
   <view class='flex-row good-item text-32'>
-    <image src='../assets/images/good5.png'></image>
+    <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1qtejrj20680460uh.jpg'></image>
     <view class='flex-column inner-text'>
       <text>黄草山牛肉</text>
       <text class='price'>￥128.90</text>

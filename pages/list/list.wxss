@@ -1,9 +1,16 @@
 /* pages/list/list.wxss */
-page{height: 100%;}
+page{
+  height: 100%;
+  overflow:hidden;}
 .content{
   display: flex;
   flex-direction: row;
   height: 100%;
+  margin-top: 80rpx;
+  overflow: hidden;
+}
+scroll-view{
+  margin-top: 50rpx;
 }
 swiper{
   width:76%;
@@ -44,4 +51,30 @@ swiper-item{
   border-left: solid 3px;
   background-color: #fff;
 }
+
+/*搜索*/
+.search{
+  justify-content: flex-start;
+  border: solid 1px #e6e6e6;
+  width:92%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+  
+}
+.input-placeholder{
+  font-size: 23rpx;
+  margin-left: 10rpx;
+}
+.search-wrap{
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 20rpx 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
 

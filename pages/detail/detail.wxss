@@ -1,0 +1,126 @@
+/* pages/detail/detail.wxss */
+page{
+  background-color: #eaeaea;
+}
+image{
+  width: 100%;
+}
+swiper{
+  height: 83vw;
+  width: 100vw;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+.basic-info{
+  align-items: flex-start;
+  padding: 30rpx;
+}
+.info{
+  padding: 30rpx;
+  border-top: solid 1px #e6e6e6;
+}
+.property-name{
+  margin-right: 40rpx;
+}
+.main{
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+.more{
+  background-color: #fff;
+  padding: 30rpx;
+  margin-bottom: 200rpx;
+}
+/*底部*/
+.btns{
+  background-color: #fff;
+  border-top: solid 1px #ccc;
+  position: fixed;
+  bottom:0;
+}
+.btn{
+  width:36vw;
+  text-align: center;
+  line-height: 98rpx;
+  height: 98rpx;
+}
+.btns .iconfont{
+  width:14vw;
+  text-align: center;
+  border-right: solid 1px #ccc;
+  font-size: 40rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+}
+.add-cart{
+  background-color: #61ce7c;
+  color: #fff;
+}
+
+/*选择规格弹出层*/
+.properties-layer{
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  background-color: #fff;
+  width: 100vw;
+}
+.properties-layer .basic-info{
+  justify-content: flex-start;
+  margin-bottom: 50rpx;
+}
+.properties-layer .flex-column{
+ align-items: flex-start;
+
+}
+.properties-layer image{
+  width:24vw;
+  height:24vw;
+}
+.properties-layer .property{
+  border: solid 1px;
+  color: #666;
+  width: 25vw;
+  display: inline-block;
+  text-align: center;
+  margin-right: 3vw;
+  border-radius: 5rpx;
+  padding:  10rpx 0;
+}
+.amount-wrap{
+  justify-content: flex-start;
+}
+.icon-jian,.icon-jia,.amount{
+  display: block;
+  height: 70rpx;
+  line-height: 70rpx;
+   border:solid 1px;
+}
+
+.icon-jia,.icon-jian{
+  padding: 0 40rpx;
+  color:#ccc;
+}
+.icon-jia.active,.icon-jian.active{
+  color: #000;
+}
+.icon-jia{border-left: none;}
+.icon-jian{border-right: none;}
+.icon-jia:before{color: #000;}
+.amount{
+  border: solid 1px;
+  padding: 0 50rpx;
+}
+.properties-layer .btn{
+  width:50vw;
+  font-size: 28rpx;
+}
+.choose-amount,.properties{
+  padding: 0 28rpx;
+  margin-bottom: 53rpx;
+}
+.properties-layer .property-name{
+  margin-bottom: 36rpx;
+}
