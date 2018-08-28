@@ -47,7 +47,7 @@
   <view class='flex-row basic-info'>
     <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig0jeg35j204b04gdh5.jpg'></image>
     <view class='flex-column'>
-      <text class='price'>{{good}}</text>
+      <text class='price'>{{good[0].price}}</text>
       <text>已选择：1kg</text>
     </view>
   </view>
