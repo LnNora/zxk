@@ -9,10 +9,13 @@ Page({
     amount:1,
     min:true,
     max:false,
+    flag:true,
     good:[
       {price:100,name:'1kg'},
       {price:200,name:'2kg'},
-      {price:300,name:'3kg'}]
+      {price:300,name:'3kg'}],
+    currentOption:0,
+    currentPrice:100
   },
 
   /**
@@ -103,5 +106,27 @@ Page({
     }else{
       this.setData({ min: true })
     }
+  },
+  tagChoose:function(option){
+    console.log(option);
+    var id = option.target.dataset.id;
+    var price = option.target.dataset.price;
+    var that = this;
+    that.setData({
+      currentOption:id,
+      currentPrice:price
+    })
+  },
+  //显示弹出层
+  show:function(){
+    this.setData({
+      flag:false
+    })
+  },
+  //隐藏弹出层
+  conceal:function(){
+    this.setData({
+      flag:true
+    })
   }
 })

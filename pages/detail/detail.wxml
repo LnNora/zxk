@@ -1,4 +1,5 @@
 <!--pages/detail/detail.wxml-->
+<view class="{{flag==false?'lock':''}}">
 <!--轮播图-->
 <swiper indicator-dots>
   <swiper-item>
@@ -16,7 +17,7 @@
   </view>
   <view class='text-28 info'>
     <text class='weaken property-name'>已选</text>
-    <text>黎香湖老母鸡1.5kg</text>
+    <text bindtap='show'>黎香湖老母鸡1.5kg</text>
   </view>
   <view class='text-28 info'>
     <text class='weaken property-name' >送至</text>
@@ -41,20 +42,23 @@
   <view class='btn buy'>立即购买</view>
   <view class='btn add-cart'>加入购物车</view>
 </view>
+</view>
 
+<!--遮罩-->
+<view class='mask' hidden='{{flag}}' bindtap='conceal'></view>
 <!--选择规格弹出层-->
-<view class='properties-layer text-32'>
+<view class='properties-layer text-32' hidden='{{flag}}'>
   <view class='flex-row basic-info'>
     <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig0jeg35j204b04gdh5.jpg'></image>
     <view class='flex-column'>
-      <text class='price'>{{good[0].price}}</text>
+      <text class='price'>￥{{currentPrice*amount}}</text>
       <text>已选择：1kg</text>
     </view>
   </view>
   <view class='properties'>
     <view class='property-name'>规格</view>
     <view>
-      <text class='property' wx:for="{{good}}">{{item.name}}</text>
+      <text class="property {{currentOption==index?'active':''}}" wx:for="{{good}}" data-id='{{index}}' bindtap='tagChoose' data-price="{{item.price}}">{{item.name}}</text>
     </view>
   </view>
   <view class='choose-amount'>

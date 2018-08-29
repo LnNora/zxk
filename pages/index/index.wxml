@@ -11,7 +11,7 @@
 
 <!--导航-->
 <view class='nav flex-row text-24'>
-  <navigator class="flex-column"><image src="https://ws1.sinaimg.cn/large/64b089efgy1fuig1t4hivj202e02eglg.jpg" mode="widthFix"></image><text>土禽</text></navigator>
+  <navigator class="flex-column" url="../list/list?title=list"><image src="https://ws1.sinaimg.cn/large/64b089efgy1fuig1t4hivj202e02eglg.jpg" mode="widthFix"></image><text>土禽</text></navigator>
   <navigator class="flex-column"><image src="https://ws1.sinaimg.cn/large/64b089efgy1fuig1uh5u7j202e02emx0.jpg" mode="widthFix"></image><text>肉类</text></navigator>
   <navigator class="flex-column"><image src="https://ws1.sinaimg.cn/large/64b089efgy1fuig1wy0g1j202e02et8k.jpg" mode="widthFix"></image><text>蛋类</text></navigator>
   <navigator class="flex-column"><image src="https://ws1.sinaimg.cn/large/64b089efgy1fuig1vnzfqj202e02edfo.jpg" mode="widthFix"></image><text>水产</text></navigator>

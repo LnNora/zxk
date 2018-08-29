@@ -1,6 +1,7 @@
 /* pages/detail/detail.wxss */
 page{
   background-color: #eaeaea;
+  height: 100%;
 }
 image{
   width: 100%;
@@ -123,4 +124,23 @@ swiper image{
 }
 .properties-layer .property-name{
   margin-bottom: 36rpx;
+}
+
+.property.active{
+  color: #61ce7c;
+}
+
+/*遮罩*/
+.mask{
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  filter: opacity(0.5)
+}
+
+.lock{
+  height: 100%;
+  overflow: hidden;
 }

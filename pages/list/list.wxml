@@ -19,13 +19,13 @@
 <scroll-view scroll-y style="height:1100rpx" scroll-into-view="{{toView}}">
 <view id="tab1" class='section'>
   <text class='text-22'>土禽</text>
-  <view class='flex-row good-item text-32'>
+  <navigator class='flex-row good-item text-32' url="../detail/detail?title=detail">
     <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig0jeg35j204b04gdh5.jpg'></image>
     <view class='flex-column inner-text'>
       <text>黎香湖老母鸡</text>
       <text class='price'>￥128.90</text>
     </view>
-  </view>
+  </navigator>
   <view class='flex-row good-item text-32'>
     <image src='https://ws1.sinaimg.cn/large/64b089efgy1fuig1l91l8j204e04e0ts.jpg'></image>
     <view class='flex-column inner-text'>
